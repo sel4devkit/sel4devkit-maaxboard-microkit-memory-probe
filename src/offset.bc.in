@@ -1,0 +1,18 @@
+# Operate in Hex
+obase=16
+ibase=16
+
+# Prepare
+target_hex=MAC_PAR_TARGET_HEX
+actual_hex=MAC_PAR_ACTUAL_HEX
+
+# Calculate
+t=target_hex
+a=actual_hex
+result=t-a
+
+# Report
+result
+
+# Finish
+quit

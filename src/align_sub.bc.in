@@ -1,0 +1,18 @@
+# Operate in Hex
+obase=16
+ibase=16
+
+# Prepare
+align_hex=MAC_PAR_ALIGN_HEX
+input_hex=MAC_PAR_INPUT_HEX
+
+# Calculate
+a=align_hex
+i=input_hex
+result=(i/a)*a
+
+# Report
+result
+
+# Finish
+quit

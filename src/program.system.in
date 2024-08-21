@@ -1,0 +1,9 @@
+include(config.m4)dnl
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+    <memory_region name="probe_mem_region" phys_addr="MAC_DEF_ALIGN_BLOCK_ADDR_PRE_HEX" size="MAC_DEF_ALIGN_BLOCK_SIZE_BYTE_PRE_HEX"/>
+    <protection_domain name="probe_mem_region" priority="254">
+        <map mr="probe_mem_region" vaddr="0x00001000" perms="r" cached="false" setvar_vaddr="probe_mem_region_vaddr_uintptr"/>
+        <program_image path="probe.elf"/>
+    </protection_domain>
+</system>
