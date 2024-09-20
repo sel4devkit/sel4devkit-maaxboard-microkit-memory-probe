@@ -57,9 +57,9 @@ ${OUT_PATH}:
 ${OUT_PATH}/microkit-sdk-1.4.1: ${TMP_PATH}/sel4devkit-maaxboard-microkit/out/microkit-sdk-1.4.1 | ${OUT_PATH}
 	cp -r $< $@
 
-${TMP_PATH}/sel4devkit-maaxboard-microkit/out/microkit-sdk-1.4.1: ${TMP_PATH}/sel4devkit-maaxboard-microkit | ${TMP_PATH}
+${TMP_PATH}/sel4devkit-maaxboard-microkit/out/microkit-sdk-1.4.1: | ${TMP_PATH}/sel4devkit-maaxboard-microkit ${TMP_PATH}
 	make -C ${TMP_PATH}/sel4devkit-maaxboard-microkit all
-	
+
 .PHONY: clean
 clean:
 	rm -rf ${TMP_PATH}
